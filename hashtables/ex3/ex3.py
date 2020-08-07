@@ -4,8 +4,29 @@ def intersection(arrays):
     """
     # Your code here
 
+    hash_tbl = {}
+    result = []
+
+    for arr in arrays:
+        for num in arr:
+            if num not in hash_tbl:
+                hash_tbl[num] = 1
+            else:
+                hash_tbl[num] += 1
+
+    for i in hash_tbl:
+        if hash_tbl[i] == len(arrays):
+            result.append(i)
+
+
     return result
 
+
+print(intersection([
+            [1,2,3],
+            [1,4,5],
+            [1,6,7]
+        ]))
 
 if __name__ == "__main__":
     arrays = []
