@@ -23,11 +23,17 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+    hashing functions are functions that when given a key, they generate an address in a table. These are especially great for lookups and deletions because it's constant time complexity.
 2. Collision resolution
+    Sometime collisions occur where to different keys are given the same address.. to solve this problem, one way is to use linked lists
 3. Performance of basic hash table operations
+    Generally speaking, the performance of basic hash table operations is 0(1).. however, to ensure this we resize if our load factor ever gets to 0.7
 4. Load factor
+    For our purposes, the general load factor is 0.7.. if  the number of entries in the haashtable exceeds 0.7 and exceeds capacity we will automatically resize....
 5. Automatic resizing
+    Rule of thumb when we exceed our capacity is to double in size... this is because copying over the entire hash table takes up a lot of time.. so we just double it to save time overall
 6. Various use cases for hash tables
+    Whenever you need to lookup something super fast ex looking up a word in a dictionary
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
